@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "./Navbar";
 
 
-function App(){
+
+function Home(){
     return(
     <Navbar/>
     )
 }
 
-export default App;
+export default Home;

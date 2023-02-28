@@ -3,10 +3,21 @@ body{
     margin: 0px;
 }
 
+h1{
+    color: white;
+}
+
+.active{
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Homepage styling */
+
+/*Navbar*/
 .navbar{
-    /* background-color: aqua; */
     display: grid;
-    grid-template-columns:  750px 150px 150px 150px 150px;
+    grid-template-columns:  48.5vw 15.25vw 15.25vw 15.25vw 1vw;
     grid-gap: 10px;
     
 }
@@ -17,9 +28,8 @@ body{
     width: 5vw;
     height: 7vh;
     border-radius:50% ;
-    
     position: absolute;
-    top: 15px;
+    top: 1.2rem;
     z-index: -1;
 
 }
@@ -29,25 +39,20 @@ body{
 }
 
 .lifestyle{
-    /* background-color: orange; */
     padding-left: 43px;
 }
 .products{
-    /* background-color: red; */
     margin-top: 30px;
 }
 
 .offers{
-    /* background-color: blue; */
     margin-top: 30px;
 }
 
 .about{
-    /* background-color: blueviolet; */
     margin-top: 30px;
 }
 
 .cart{
-    /* background-color: aliceblue; */
     margin-top: 25px;
 }
