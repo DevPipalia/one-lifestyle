@@ -113,6 +113,19 @@ h2{
 
   /*Products Page*/
 
+.buttons{
+    margin-top: 55px;
+    text-align: center;
+}
+
+.product-button{
+    margin-left: 65px;
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 20%;
+    height: 50px;
+}
+
 .item-container{
     /* background-color: aqua; */
     margin-top:60px ;

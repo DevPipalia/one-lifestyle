@@ -33,6 +33,15 @@ function Product(){
     return(
         <div>
         <Navbar/>
+        <div className="buttons">
+        <button className="product-button">Show all</button>
+        <button className="product-button">Biscuits And Cookies</button>
+        <button className="product-button">Beverages</button>
+        <button className="product-button">BodyCare</button>
+        <button className="product-button">Cleaning</button>
+        <button className="product-button">Eatables</button>
+        <button className="product-button">HairCare</button>
+        </div>
         {Beverages.map(createItem)}
         {Biscuits.map(createItem)}
         {BodyCare.map(createItem)}
