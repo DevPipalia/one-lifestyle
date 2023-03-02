@@ -1,7 +1,14 @@
 import React from "react";
 import Navbar from "../homepage/Navbar";
 import Items from "./Items";
-import ItemsData from "./ItemsData";
+// import ItemsData from "./CleaningData";
+import Beverages from "./BeveragesData";
+import Biscuits from "./BiscuitsData";
+import BodyCare from "./BodyCareData";
+import HairCare from "./HairCareData";
+import Eatables from "./Eatables";
+import Cleaning from "./CleaningData";
+
 
 function handleClick(){
     return(
@@ -26,7 +33,12 @@ function Product(){
     return(
         <div>
         <Navbar/>
-        {ItemsData.map(createItem)}
+        {Beverages.map(createItem)}
+        {Biscuits.map(createItem)}
+        {BodyCare.map(createItem)}
+        {Cleaning.map(createItem)}
+        {Eatables.map(createItem)}
+        {HairCare.map(createItem)}
         </div>
     )
 }
