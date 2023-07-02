@@ -2,19 +2,11 @@ import React from "react";
 import Navbar from "../homepage/Navbar";
 import Items from "./Items";
 import Beverages from "./BeveragesData";
-import Biscuits from "./BiscuitsData";
-import BodyCare from "./BodyCareData";
-import HairCare from "./HairCareData";
-import Eatables from "./Eatables";
-import Cleaning from "./CleaningData";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-function handleClick(){
-    return(
-    console.log
-    )
-}
+
+
 
 function createItem(itemelemnet){
     return(
@@ -29,7 +21,7 @@ function createItem(itemelemnet){
 
 
 
-function Product(){
+function BeveragePage(){
     return(
         <div>
         <Navbar/>
@@ -42,18 +34,11 @@ function Product(){
         <Link to={"/products/eatables"}></Link><button className="product-button">Eatables</button>
         <Link to={"/products/haircare"}></Link><button className="product-button">HairCare</button>
         </div>
-
         <div className="all-products">
         {Beverages.map(createItem)}
-        {Biscuits.map(createItem)}
-        {BodyCare.map(createItem)}
-        {Cleaning.map(createItem)}
-        {Eatables.map(createItem)}
-        {HairCare.map(createItem)}
         </div>
         </div>
     )
 }
 
-export default Product;
-export {handleClick};
+export default BeveragePage;
